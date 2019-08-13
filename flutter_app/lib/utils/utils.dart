@@ -8,7 +8,7 @@ class Utils {
         toastLength: Toast.LENGTH_SHORT,
         gravity: ToastGravity.CENTER,
         timeInSecForIos: 1,
-        backgroundColor: Colors.red,
+        backgroundColor: Colors.blueGrey,
         textColor: Colors.white,
         fontSize: 14.0);
   }
