@@ -24,4 +24,12 @@ class MyAppBar extends AppBar {
   @override
   List<Widget> get actions => titleAction;
 
+
+  @override
+  Brightness get brightness => Brightness.dark;
+
+  @override
+  Color get backgroundColor => Colors.blueGrey;
+
+
 }

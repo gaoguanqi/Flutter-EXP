@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/app/pages/common/common_page.dart';
 import 'package:flutter_app/app/wodget/app_bar_widget.dart';
+import 'package:flutter_app/utils/utils.dart';
 
 import 'home_data.dart';
 
@@ -9,7 +11,9 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  List<HomeData> data = HomePagetData.mock().list;
+  List<HomeData> data = HomePagetData
+      .mock()
+      .list;
 
   @override
   Widget build(BuildContext context) {
@@ -35,6 +39,7 @@ Widget _homeListView(BuildContext context, List<HomeData> data) =>
       },
     );
 
+
 class _ListItem extends StatelessWidget {
   int _index;
   HomeData _data;
@@ -43,22 +48,41 @@ class _ListItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Card(
-      margin: EdgeInsets.only(left: 10.0, right: 10.0,top: 4.0,bottom: 4.0),
-      child: Container(
-        height: 78.0,
-        alignment: Alignment.topLeft,
-        padding: EdgeInsets.all(6.0),
-        child: Row(
-          children: <Widget>[
-            Image.network(_data.avater),
-            Padding(
-              padding: EdgeInsets.only(left: 10.0),
-            ),
-            Text(_data.title),
-          ],
+    return GestureDetector(
+      onTap: (){
+        _onListItemClick(context,_index,_data);
+      },
+      child: Card(
+        margin: EdgeInsets.only(left: 10.0, right: 10.0, top: 4.0, bottom: 4.0),
+        child: Container(
+          height: 78.0,
+          alignment: Alignment.topLeft,
+          padding: EdgeInsets.all(6.0),
+          child: Row(
+            children: <Widget>[
+              Image.network(_data.avater),
+              Padding(
+                padding: EdgeInsets.only(left: 10.0),
+              ),
+              Text(_data.title),
+            ],
+          ),
         ),
       ),
     );
+  }
+
+  void _onListItemClick(BuildContext context,int index, HomeData data) {
+    switch(_index){
+      case 0:
+        Navigator.push(context,
+             MaterialPageRoute(builder: (context) {
+              return CommonPage();
+            }));
+        break;
+      default:
+        Utils.showToast(data.title);
+        break;
+    }
   }
 }
