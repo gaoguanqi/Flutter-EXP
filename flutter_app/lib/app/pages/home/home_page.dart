@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/app/pages/common/common_page.dart';
 import 'package:flutter_app/app/wodget/app_bar_widget.dart';
+import 'package:flutter_app/app/wodget/loading_dialog.dart';
+import 'package:flutter_app/app/wodget/loading_widget.dart';
 import 'package:flutter_app/utils/utils.dart';
 
 import 'home_data.dart';
@@ -85,4 +87,9 @@ class _ListItem extends StatelessWidget {
         break;
     }
   }
+
+  __register()  async {
+
+  }
+
 }
