@@ -5,55 +5,58 @@ class HomeData {
   final String title;
 
   const HomeData({@required this.avater, @required this.title})
-      : assert(avater != null,title != null);
+      : assert(avater != null, title != null);
 }
 
-class HomePagetData{
+class HomePagetData {
   final List<HomeData> list = [
     const HomeData(
-      avater: 'http://n.sinaimg.cn/sports/2_img/upload/cf0d0fdd/107/w1024h683/20181128/pKtl-hphsupx4744393.jpg',
-      title: 'web呢'
-    ),
+        avater:
+            'http://n.sinaimg.cn/sports/2_img/upload/cf0d0fdd/107/w1024h683/20181128/pKtl-hphsupx4744393.jpg',
+        title: 'common'),
     const HomeData(
-        avater: 'http://n.sinaimg.cn/sports/2_img/upload/cf0d0fdd/107/w1024h683/20181128/pKtl-hphsupx4744393.jpg',
-        title: '测试1'
-    ),   const HomeData(
-        avater: 'http://n.sinaimg.cn/sports/2_img/upload/cf0d0fdd/107/w1024h683/20181128/pKtl-hphsupx4744393.jpg',
-        title: '测试1'
-    ),   const HomeData(
-        avater: 'http://n.sinaimg.cn/sports/2_img/upload/cf0d0fdd/107/w1024h683/20181128/pKtl-hphsupx4744393.jpg',
-        title: '测试1'
-    ),   const HomeData(
-        avater: 'http://n.sinaimg.cn/sports/2_img/upload/cf0d0fdd/107/w1024h683/20181128/pKtl-hphsupx4744393.jpg',
-        title: '测试1'
-    ),   const HomeData(
-        avater: 'http://n.sinaimg.cn/sports/2_img/upload/cf0d0fdd/107/w1024h683/20181128/pKtl-hphsupx4744393.jpg',
-        title: '测试1'
-    ),   const HomeData(
-        avater: 'http://n.sinaimg.cn/sports/2_img/upload/cf0d0fdd/107/w1024h683/20181128/pKtl-hphsupx4744393.jpg',
-        title: '测试1'
-    ),   const HomeData(
-        avater: 'http://n.sinaimg.cn/sports/2_img/upload/cf0d0fdd/107/w1024h683/20181128/pKtl-hphsupx4744393.jpg',
-        title: '测试1'
-    ),   const HomeData(
-        avater: 'http://n.sinaimg.cn/sports/2_img/upload/cf0d0fdd/107/w1024h683/20181128/pKtl-hphsupx4744393.jpg',
-        title: '测试1'
-    ),   const HomeData(
-        avater: 'http://n.sinaimg.cn/sports/2_img/upload/cf0d0fdd/107/w1024h683/20181128/pKtl-hphsupx4744393.jpg',
-        title: '测试1'
-    ),   const HomeData(
-        avater: 'http://n.sinaimg.cn/sports/2_img/upload/cf0d0fdd/107/w1024h683/20181128/pKtl-hphsupx4744393.jpg',
-        title: '测试1'
-    ),
-
-
-
-
-
-
+        avater:
+            'http://n.sinaimg.cn/sports/2_img/upload/cf0d0fdd/107/w1024h683/20181128/pKtl-hphsupx4744393.jpg',
+        title: 'dart'),
+    const HomeData(
+        avater:
+            'http://n.sinaimg.cn/sports/2_img/upload/cf0d0fdd/107/w1024h683/20181128/pKtl-hphsupx4744393.jpg',
+        title: '测试1'),
+    const HomeData(
+        avater:
+            'http://n.sinaimg.cn/sports/2_img/upload/cf0d0fdd/107/w1024h683/20181128/pKtl-hphsupx4744393.jpg',
+        title: '测试1'),
+    const HomeData(
+        avater:
+            'http://n.sinaimg.cn/sports/2_img/upload/cf0d0fdd/107/w1024h683/20181128/pKtl-hphsupx4744393.jpg',
+        title: '测试1'),
+    const HomeData(
+        avater:
+            'http://n.sinaimg.cn/sports/2_img/upload/cf0d0fdd/107/w1024h683/20181128/pKtl-hphsupx4744393.jpg',
+        title: '测试1'),
+    const HomeData(
+        avater:
+            'http://n.sinaimg.cn/sports/2_img/upload/cf0d0fdd/107/w1024h683/20181128/pKtl-hphsupx4744393.jpg',
+        title: '测试1'),
+    const HomeData(
+        avater:
+            'http://n.sinaimg.cn/sports/2_img/upload/cf0d0fdd/107/w1024h683/20181128/pKtl-hphsupx4744393.jpg',
+        title: '测试1'),
+    const HomeData(
+        avater:
+            'http://n.sinaimg.cn/sports/2_img/upload/cf0d0fdd/107/w1024h683/20181128/pKtl-hphsupx4744393.jpg',
+        title: '测试1'),
+    const HomeData(
+        avater:
+            'http://n.sinaimg.cn/sports/2_img/upload/cf0d0fdd/107/w1024h683/20181128/pKtl-hphsupx4744393.jpg',
+        title: '测试1'),
+    const HomeData(
+        avater:
+            'http://n.sinaimg.cn/sports/2_img/upload/cf0d0fdd/107/w1024h683/20181128/pKtl-hphsupx4744393.jpg',
+        title: '测试1'),
   ];
 
-  static HomePagetData mock(){
+  static HomePagetData mock() {
     return HomePagetData();
   }
 }

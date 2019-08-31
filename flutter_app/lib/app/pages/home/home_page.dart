@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/app/pages/common/common_page.dart';
+import 'package:flutter_app/app/pages/dart/dart_page.dart';
 import 'package:flutter_app/app/widget/app_bar_widget.dart';
 import 'package:flutter_app/utils/utils.dart';
 
@@ -76,8 +77,14 @@ class _ListItem extends StatelessWidget {
     switch(_index){
       case 0:
         Navigator.push(context,
-             MaterialPageRoute(builder: (context) {
+            MaterialPageRoute(builder: (context) {
               return CommonPage();
+            }));
+        break;
+      case 1:
+        Navigator.push(context,
+            MaterialPageRoute(builder: (context) {
+              return DartPage();
             }));
         break;
       default:
