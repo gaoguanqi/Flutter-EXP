@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/app/wodget/app_bar_widget.dart';
+import 'package:flutter_app/app/widget/app_bar_widget.dart';
 class CommonPage extends StatefulWidget{
   @override
   _CommonPageState createState() => _CommonPageState();
