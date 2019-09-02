@@ -53,11 +53,8 @@ void main(){
   var set1 = ['张无忌','张三丰','赵敏'];
   // 创建空集合
   var set2 = <String>[];
-  var set3 = <String>{};
   set2.add('1');
-  set3.add('123');
   print('set2:$set2');
-  print('set3:$set3');
   //6.6  键值对集合
   var map = {'张三':20,'李四':21,'王五':22};
 
