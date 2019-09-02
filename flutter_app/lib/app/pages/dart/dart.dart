@@ -68,12 +68,24 @@ void main(){
 
   // 7 函数
   print(add(10, 20));
-  //7.1可选参数 ,, k
+  //7.1可选参数
+  print(go('我去'));
+  print(go('我去','you'));
+  // 7.2  默认参数
+  print(myMultiply(10));
+  print(myMultiply(10,base: 11));
+
 }
 
 // 返回值类型可省略，为了阅读最好不省略
 int add(int a,int b) => a+b;
 
 String go(String to,[String who]){
-
+  if(who == null){
+    return to;
+  }else{
+    return '$to with $who';
+  }
 }
+
+int myMultiply(int num,{int base = 10}) => num * base;
