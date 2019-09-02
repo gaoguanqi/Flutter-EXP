@@ -1,4 +1,5 @@
 void main(){
+  //https://juejin.im/post/5ce5db696fb9a07ed136acea
   print('hello dart');
 
   //变量声明用var 关键字，未初始化的变量初始值都为 null，数字也为 null
@@ -57,10 +58,22 @@ void main(){
   print('set2:$set2');
   //6.6  键值对集合
   var map = {'张三':20,'李四':21,'王五':22};
+  print(map);
+  Map<String,String> map2 = Map();
+  map2['数学'] = '90';
+  map2['英语'] = '100';
+  print(map2);
 
+  print(map2['英语']); // 取值
 
+  // 7 函数
+  print(add(10, 20));
+  //7.1可选参数 ,, k
+}
 
+// 返回值类型可省略，为了阅读最好不省略
+int add(int a,int b) => a+b;
 
-  
+String go(String to,[String who]){
 
 }
