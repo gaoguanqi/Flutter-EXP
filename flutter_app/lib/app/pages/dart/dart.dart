@@ -74,8 +74,54 @@ void main(){
   // 7.2  默认参数
   print(myMultiply(10));
   print(myMultiply(10,base: 11));
+  //7.3 main 函数，顶级程序入口，返回值为void，可选参数List<String>
+  //7.4匿名函数
+  var list2 = [1,2,3,4,5,6,7];
+  list2.forEach((i){
+    print('this is$i');
+  });
+
+  //8.1
+//  for
+  var msg = StringBuffer('你好 dart');
+  for(var i = 0;i<3;i++){
+    msg.write('!');
+  }
+  print(msg);
+
+  var names = ['张三','李四','王五'];
+  for(var name in names){
+    print('name:$name');
+  }
+  //switch
+  String today = 'Friday';
+  switch(today){
+    case 'Monday':
+      print('星期一');
+      break;
+    case 'Friday':
+      print('星期五');
+      break;
+    default:
+      print('输入错误$today');
+      break;
+  }
+
+  //9异常捕获
+  try {
+    String nullStr;
+    nullStr.length;
+  } catch (e) {
+    print('异常了e:$e');
+  } finally {
+    print('始终执行');
+  }
+
 
 }
+
+
+
 
 // 返回值类型可省略，为了阅读最好不省略
 int add(int a,int b) => a+b;
