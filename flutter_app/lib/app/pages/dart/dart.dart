@@ -116,14 +116,32 @@ void main(){
   } finally {
     print('始终执行');
   }
+//10为类添加新的功能
+  var p1 = Person('张三',1);
+  print('p1::${p1.name}--${p1.age}');
 
 
 }
 
 
+class Person{
+  String name;
+  int age = 0;
+
+  Person(this.name,this.age);
+}
+class Point{
+  num x,y;
+  Point(this.x,this.y);
+  Point.origin(){
+    x = 0;
+    y = 0;
+  }
 
 
-// 返回值类型可省略，为了阅读最好不省略
+}
+
+// 返回值类型可省略，为了阅读最好不省略，flutter 中一般都会省略
 int add(int a,int b) => a+b;
 
 String go(String to,[String who]){
